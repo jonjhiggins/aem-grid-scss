@@ -1,0 +1,26 @@
+{
+  "name": "aem-grid-scss",
+  "version": "1.0.0",
+  "description": "Unofficial SCSS port of the AEM responsive grid",
+  "main": "aem-grid.scss",
+  "scripts": {
+    "build": "node-sass aem-grid.scss  dist/aem-grid.css --precision 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jonjhiggins/aem-grid-scss.git"
+  },
+  "keywords": [
+    "AEM",
+    "grid"
+  ],
+  "author": "Jon Higgins <jon@jonhiggins.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonjhiggins/aem-grid-scss/issues"
+  },
+  "homepage": "https://github.com/jonjhiggins/aem-grid-scss#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
