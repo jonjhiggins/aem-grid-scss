@@ -4,7 +4,9 @@
   "description": "Unofficial SCSS port of the AEM responsive grid",
   "main": "aem-grid.scss",
   "scripts": {
-    "build": "node-sass aem-grid.scss  dist/aem-grid.css --precision 8"
+    "build:scss": "node-sass src/scss/aem-grid.scss  dist/scss-grid.css --precision 8",
+    "build:less": "lessc src/less/grid.less >  dist/less-grid-original.css",
+    "build": "npm run build:scss && npm run build:less"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/jonjhiggins/aem-grid-scss#readme",
   "devDependencies": {
+    "less": "^3.7.1",
     "node-sass": "^4.9.2"
   }
 }

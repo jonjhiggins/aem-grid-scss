@@ -1,0 +1,60 @@
+body {
+    color: #0a0a0a;
+}
+
+.footer {
+    color: #ffffff;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.demo-GridContainer {
+    padding: 0 64px;
+}
+
+.demo-GridRowExample {
+    margin: 16px 0;
+}
+
+.demo-GridRowExample-title {
+    height: 32px;
+    width: 64px;
+
+    line-height: 32px;
+
+    margin-left: -72px;
+    padding-right: 8px;
+    text-align: right;
+    
+    float: left;
+}
+
+.demo-Grid {
+    background: #fafafa;
+}
+
+.demo-GridColumn {
+    background: #eee;
+    min-height: 32px;
+    line-height: 32px;
+    padding-right: 8px;
+    text-align: right;
+}
+
+.demo-GridColumn--separator {
+    border-right: 5px solid #fafafa;
+}
+
+.demo-GridColumn--multiline {
+    margin: 8px 0;
+}
+
+.demo-GridColumn--image {
+    height: 128px;
+    line-height: 128px;
+    text-align: center;
+    border: 5px solid #fafafa;
+}
