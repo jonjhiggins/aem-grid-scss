@@ -25,7 +25,7 @@
   @mixin generate-columns($columnTotal, $breakPoint, $column: 1) {
     @if $column <= $columnTotal {
       > .aem-GridColumn.aem-GridColumn--#{$breakPoint}--#{$column} {
-        flex-basis: ($column * 100% / $columnTotal);
+        width: ($column * 100% / $columnTotal);
       }
   
       @include generate-columns($columnTotal, $breakPoint, ($column + 1));
