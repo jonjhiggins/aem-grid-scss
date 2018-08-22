@@ -70,6 +70,11 @@
   /* API function to be called to generate a grid config */
   @mixin generate-grid($breakPoint, $columnTotal){
     @include grid-loop($breakPoint, $columnTotal);
+
+    >.aem-GridColumn.aem-GridColumn--#{$breakPoint}--newline {
+      /* newline behavior */
+      flex: 1 0 100%;
+    }
   
     >.aem-GridColumn.aem-GridColumn--#{$breakPoint}--hide {
       /* hide behavior */
