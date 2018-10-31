@@ -1,0 +1,32 @@
+/* grid component */
+.aem-Grid {
+    display: block;
+    width: 100%;
+  }
+  
+  .aem-Grid::before,
+  .aem-Grid::after {
+    display: table;
+    content: " ";
+  }
+  
+  .aem-Grid::after {
+    clear: both;
+  }
+  
+  /* placeholder for new components */
+  .aem-Grid-newComponent {
+    clear: both;
+    margin: 0;
+  }
+  
+  /* column of a grid */
+  .aem-GridColumn {
+    box-sizing: border-box;
+    clear: both;
+  }
+  
+  /* force showing hidden */
+  .aem-GridShowHidden > .aem-Grid > .aem-GridColumn {
+    display: block !important;
+  }

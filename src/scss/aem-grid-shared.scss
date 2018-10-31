@@ -1,7 +1,5 @@
-@import "aem-grid-base";
-
 /* maximum amount of grid cells to be provided */
-$max_col: 12;
+$max_col: 12 !default;
 
 $grid-gutter-width: 30px;
 
