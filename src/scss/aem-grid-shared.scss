@@ -24,7 +24,8 @@ $grid-gutter-width: 30px;
 }
 
 .aem-GridColumn {
-    padding: 0 $grid-gutter-width/2;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
 }
 
 .responsivegrid.aem-GridColumn.aem-GridColumn--default--16 {
