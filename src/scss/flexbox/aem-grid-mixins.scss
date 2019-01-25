@@ -47,6 +47,9 @@
   /* API function to be called to generate a grid config */
   @mixin generate-grid($breakPoint, $columnTotal){
     @include grid-loop($breakPoint, $columnTotal);
+  }
+
+  @mixin generate-grid-hide($breakPoint) {
     >.aem-GridColumn.aem-GridColumn--#{$breakPoint}--hide {
       /* hide behavior */
       display: none;

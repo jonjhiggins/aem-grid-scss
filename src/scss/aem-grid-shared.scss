@@ -8,11 +8,17 @@ $grid-gutter-width: 30px;
     @include generate-grid(default, $max_col);
     width: auto;
 }
+@media (min-width: 1201px) {
+    .aem-Grid {
+        @include generate-grid-hide(default)
+    }
+}
 
 /* phone breakpoint */
 @media (max-width: 650px) {
     .aem-Grid {
         @include generate-grid(phone, $max_col);
+        @include generate-grid-hide(phone)
     }
 }
 
@@ -20,6 +26,7 @@ $grid-gutter-width: 30px;
 @media (min-width: 651px) and (max-width: 1200px) {
     .aem-Grid {
         @include generate-grid(tablet, $max_col);
+        @include generate-grid-hide(tablet)
     }
 }
 

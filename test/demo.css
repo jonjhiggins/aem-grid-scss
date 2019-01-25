@@ -54,7 +54,9 @@ body {
 
 .demo-GridColumn--image {
     height: 128px;
-    line-height: 128px;
     text-align: center;
     border: 5px solid #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
